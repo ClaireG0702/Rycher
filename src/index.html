@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rycher</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <aside class="aside-container">
+        <h2 class="titre-aside">Choisissez votre cuir</h2>
+        <div class="color-palette">
+            <div class="colors-group">
+                <button class="color-container" onclick="changeColor('sac1')">
+                    <div class="color-element color1"></div>
+                    <p><i><img src="./../assets/img/info.png" alt="info" width="12px"></i>&nbsp;Nom 1</p>
+                </button>
+                <button class="color-container" onclick="changeColor('sac2')">
+                    <div class="color-element color2"></div>
+                    <p><i><img src="./../assets/img/info.png" alt="info" width="12px"></i>&nbsp;Nom 2</p>
+                </button>
+            </div>
+            <div class="colors-group">
+                <button class="color-container" onclick="changeColor('sac3')">
+                    <div class="color-element color3"></div>
+                    <p><i><img src="./../assets/img/info.png" alt="info" width="12px"></i>&nbsp;Nom 3</p>
+                </button>
+                <button class="color-container" onclick="changeColor('sac4')">
+                    <div class="color-element color4"></div>
+                    <p><i><img src="./../assets/img/info.png" alt="info" width="12px"></i>&nbsp;Nom 4</p>
+                </button>
+            </div>
+            <div class="colors-group">
+                <button class="color-container" onclick="changeColor('sac5')">
+                    <div class="color-element color5"></div>
+                    <p><i><img src="./../assets/img/info.png" alt="info" width="12px"></i>&nbsp;Nom 5</p>
+                </button>
+                <button class="color-container" onclick="changeColor('sac6')">
+                    <div class="color-element color6"></div>
+                    <p><i><img src="./../assets/img/info.png" alt="info" width="12px"></i>&nbsp;Nom 6</p>
+                </button>
+            </div>
+            <div class="colors-group">
+                <button class="color-container" onclick="changeColor('sac7')">
+                    <div class="color-element color7"></div>
+                    <p><i><img src="./../assets/img/info.png" alt="info" width="12px"></i>&nbsp;Nom 7</p>
+                </button>
+            </div>
+        </div>
+    </aside>
+    <div class="body-container">
+        <header class="header-container">
+            <h1 class="brand-name">Rycher</h1>
+            <nav>
+                <ul class="list-container">
+                    <li><a href="#"><img src="./../assets/img/user.png" alt="user" width="35px"></a></li>
+                    <li><a href="#"><img src="./../assets/img/shopping-bag.png" alt="cart" width="35px"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-container">
+            <div class="preview-container" id="preview">
+                <img id="bag" src="./../assets/img/sac.png" alt="sac" width="40%">
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let bagElement = document.getElementById('bag');
+
+        function changeColor(model) {
+            bagElement.setAttribute('src', `./../assets/img/${model}.png`);
+        }
+    </script>
+</body>
+</html>

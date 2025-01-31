@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Edwardian-Script-ITC';
+    src: url(./../assets/font/Edwardian-Script-ITC-Regular.ttf);
+}
+@font-face {
+    font-family: 'Cardo';
+    src: url(./../assets/font/Cardo-Regular.ttf);
+}
+
+:root {
+    --dark-grey: #322d29;
+    --cherry-red: #72383d;
+    --brown: #ac9c8d;
+    --light-brown: #efe9e1;
+}
+
+html, body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+}
+
+/* ------ Aside ----- */
+.aside-container {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-grey);
+    color: #fff;
+    font-family: 'Cardo';
+}
+
+.titre-aside {
+    padding: 15px;
+    text-align: center;
+}
+
+.preview-container {
+    display: flex;
+}
+
+.color-palette {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.colors-group {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-element {
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    border-radius: 20%;
+}
+
+.color1 {
+    background-color: #333;
+}
+.color2 {
+    background-color: var(--dark-grey);
+}
+.color3 {
+    background-color: var(--cherry-red);
+}
+.color4 {
+    background-color: darkred;
+}
+.color5 {
+    background-color: var(--brown);
+}
+.color6 {
+    background-color: burlywood;
+}
+.color7 {
+    background-color: var(--light-brown);
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--light-brown);
+    color: var(--dark-grey);
+}
+
+.brand-name {
+    font-family: 'Edwardian-Script-ITC';
+    font-size: 36px;
+}
+
+.list-container {
+    display: flex;
+    gap: 30px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.main-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.preview-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: #fff;
+    color: #333;
+    border-radius: 8%;
+    border: none;
+}
+
+button:hover {
+    box-shadow: #525353 1px 1px 30px;
+}
