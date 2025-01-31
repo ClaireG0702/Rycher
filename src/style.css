@@ -41,6 +41,8 @@ body {
 
 .preview-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .color-palette {
